@@ -1,0 +1,29 @@
+{
+  "name": "design-parttern-learning",
+  "version": "1.0.0",
+  "description": "learning design parttern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config ./webpack.dev.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fxpby/design-parttern-learning.git"
+  },
+  "keywords": [
+    "design",
+    "parttern"
+  ],
+  "author": "fxpby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fxpby/design-parttern-learning/issues"
+  },
+  "homepage": "https://github.com/fxpby/design-parttern-learning#readme",
+  "devDependencies": {
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
