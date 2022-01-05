@@ -20,7 +20,8 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, './release'),
+    static: path.join(__dirname, './release'),
+    hot: true,
     open: true, // 自动打开浏览器
     port: 9001
   }
