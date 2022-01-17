@@ -1,11 +1,9 @@
-class Person {
-  constructor(name) {
-    this.name = name
-  }
-  getName() { 
-    return this.name 
-  }
+@testDec
+class Demo{
+
 }
 
-const p = new Person('olu cool')
-console.log(p)
+function testDec(target) {
+  target.isDec = true
+}
+console.log(Demo.isDec)
