@@ -1,9 +1,4 @@
-@testDec
-class Demo{
+import App from './demo/App.js'
 
-}
-
-function testDec(target) {
-  target.isDec = true
-}
-console.log(Demo.isDec)
+const app = new App('app')
+app.init('app')
