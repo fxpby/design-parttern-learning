@@ -2,21 +2,25 @@
   {
     "id": 1,
     "name": "aaa",
-    "price": 111
+    "price": 111,
+    "discount": 1
   },
   {
     "id": 2,
     "name": "bbb",
-    "price": 222
+    "price": 222,
+    "discount": 1
   },
   {
     "id": 3,
     "name": "ccc",
-    "price": 333
+    "price": 333,
+    "discount": 0
   },
   {
     "id": 4,
     "name": "ddd",
-    "price": 444
+    "price": 444,
+    "discount": 0
   }
 ]
