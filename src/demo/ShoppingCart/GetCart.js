@@ -1,11 +1,6 @@
 // 购物车内存
-let cartInstance = null
 class Cart {
   constructor() {
-    if (!cartInstance) {
-      cartInstance = new this()
-    }
-    cartInstance = this
     this.list = [];
   }
 
@@ -23,8 +18,18 @@ class Cart {
   }
 
   getCart() {
-    return this
+    return cartInstance
   }
 }
 
-export default Cart.getCart()
+let cartInstance = null
+
+// 返回单例
+const getCart = (() => () => {
+  if (!cartInstance) {
+    cartInstance = new Cart()
+  }
+  return cartInstance
+})()
+
+export default getCart
