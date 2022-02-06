@@ -1,4 +1,5 @@
 import goodsData from './../data.json'
+import createItem from './CreateItem.js'
 
 export default class List {
   constructor(app) {
@@ -15,9 +16,10 @@ export default class List {
 
   // 生成列表
   initItemList(data) {
-    data.map(item => {
-      // 创建一个 Item 然后 init
-      
+    data.map(itemData => {
+      const item = createItem(this, itemData)
+      item.init()
+      return item
     })
   }
 
