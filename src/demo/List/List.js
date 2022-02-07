@@ -16,10 +16,9 @@ export default class List {
 
   // 生成列表
   initItemList(data) {
-    data.map(itemData => {
+    data.forEach(itemData => {
       const item = createItem(this, itemData)
       item.init()
-      return item
     })
   }
 

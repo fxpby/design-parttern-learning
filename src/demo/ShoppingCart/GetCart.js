@@ -10,7 +10,7 @@ class Cart {
 
   del(id) {
     const delIndex = this.list.findIndex(x => x.id === id)
-    delIndex && this.list.splice(delIndex, 1)
+    this.list.splice(delIndex, 1)
   }
 
   getList() {

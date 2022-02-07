@@ -6,7 +6,6 @@ export default class Item {
     this.data = data
     this.$el = document.createElement("DIV")
     this.cart = getCart && getCart()
-    console.log(this.cart)
   }
 
   initContent() {
