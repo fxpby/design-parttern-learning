@@ -1,5 +1,6 @@
 import getCart from '../ShoppingCart/GetCart.js'
 import StateMachine from 'javascript-state-machine'
+import { log } from './../util/log.js'
 export default class Item {
   constructor(list, data) {
     this.list = list
@@ -67,10 +68,12 @@ export default class Item {
     $el.append(btn)
   }
 
+  @log('add')
   addToCartHandler() {
     this.cart.add(this.data)
   }
 
+  @log('del')
   deleteFromCartHandler() {
     this.cart.del(this.data.id)
   }
