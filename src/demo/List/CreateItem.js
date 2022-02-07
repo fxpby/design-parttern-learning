@@ -1,6 +1,6 @@
 import Item from './Item.js'
 
-// 工厂函数
+// 工厂函数 - 工厂模式
 export default function (list, itemData) {
   if (itemData.discount) {
     itemData = createDiscount(itemData)

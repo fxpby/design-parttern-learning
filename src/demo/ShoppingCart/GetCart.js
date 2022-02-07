@@ -24,7 +24,7 @@ class Cart {
 
 let cartInstance = null
 
-// 返回单例
+// 返回单例 - 单例模式
 const getCart = (() => () => {
   if (!cartInstance) {
     cartInstance = new Cart()

@@ -24,6 +24,7 @@ export default class Item {
     const $el = this.$el
     const btn = document.createElement("BUTTON")
     
+    // 状态模式
     const fsm = new StateMachine({
       init: '加入购物车',
       transitions: [

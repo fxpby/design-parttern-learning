@@ -1,3 +1,4 @@
+// 装饰器模式
 const log = type => (target, name, descriptor) => {
   const oldValue = descriptor.value
   descriptor.value = function() {
